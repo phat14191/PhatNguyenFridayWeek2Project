@@ -1,5 +1,22 @@
-//fontend logic//
+$(document).ready(function(event) {
+  $("#cnetm").click(function() {
+    $("#cnet").slideToggle() ;
+    $("h2#cnet").siblings("h2").hide();
+});
 
+$("#javam").click(function() {
+  $("#java").slideToggle() ;
+  $("h2#java").siblings("h2").hide();
+});
+
+$("#phpm").click(function() {
+  $("#php").slideToggle() ;
+  $("h2#php").siblings("h2").hide();
+});
+
+
+
+//fontend logic//
 $(document).ready(function() {
   $("#survey-form").submit(function(event) {
     var nameInput = $("input#name").val();
@@ -19,11 +36,4 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
-
-
-
-// $(document).ready(function() {
-//   $("#cnetm").click(function() {
-//     $("cnet").show();
-// });
-// });
+});

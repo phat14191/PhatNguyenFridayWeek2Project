@@ -10,27 +10,28 @@
   <body>
     <div class="container">
         <!-- information  -->
-      <h1>Welcome to Epicodus</h1>
-
-          <div class="information-form">
-            <h1>C#/.Net</h1>
-              <img id="cnetm" src="img/C.png" alt="C#">
-              <p id="cnet"> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market... </p>
-          </div>
-          <div class="information-form">
-            <h1>Java/Android</h1>
-              <img id="javam"src="img/Java.png" alt="C#">
-              <p id="java">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces...</p>
-            <h1>PHP/Drupal</h1>
-          </div>
-          <div class="information-form">
-              <img id="phpm" src="img/php.jpg" alt="C#">
-              <p id="php"> PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools...</p>
-          </div>
-
-          <div class="jumbotron">
-            <h2><center>Welcome to our survey<center></h2>
-          </div>
+     <h1>Welcome to Epicodus</h1>
+       <form id:"info">
+         <div class="information-detail1">
+          <h1>C#/.Net</h1>
+           <img id="cnetm" src="img/C.png" alt="abc">
+              <h2 id="cnet"> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market... </h2>
+        </div>
+        <div class="information-detail1">
+          <h1>Java/Android</h1>
+           <img id="javam"src="img/Java.png" alt="C#">
+           <h2 id="java">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces...</h2>
+        </div>
+        <div class="information-detail1">
+          <h1>PHP/Drupal</h1>
+           <img id="phpm" src="img/php.jpg" alt="C#">
+           <h2 id="php"> PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools...</h2>
+        </div>
+        </div>
+      </form>
+        <div class="jumbotron">
+          <h2><center>Welcome to our survey<center></h2>
+        </div>
         <form id="survey-form">
           <div class="form-group">
             <label for="name">Enter your name:</label>
@@ -76,7 +77,7 @@
           </div>
 
           <div class="form-group">
-            <label for="">Favorite Color</label>
+            <label for="color">Favorite Color</label>
             <input id="color" type="color" name="color">
           </div>
 
