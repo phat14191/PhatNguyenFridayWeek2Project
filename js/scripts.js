@@ -37,3 +37,31 @@ $(document).ready(function() {
   });
 });
 });
+// last part
+
+$(function() {
+  $(document).ready(function() {
+  $("#survey-form").submit(function(event) {
+    var track2 = $("select#expect").val();
+    var gender = $("select#gender").val();
+
+    if ((gender === 'male') && (track2 === 'C#/.Net')) {
+    alert ("Welcome to C#/.Net");
+  }
+    else if (
+    ((gender === 'female') && (track2 === 'PHP/Drupal')) ||
+    ((gender === 'female') && (track2 === 'Java/Amdroid'))
+  ) {
+    alert ("Welcome to PHP/Drupal");
+  }
+    else if (
+    ((gender != 'female') && (track2 === 'PHP/Drupal')) ||
+    ((gender != 'female') && (track2 === 'Java/Amdroid'))
+  ){
+    alert ("Welcome to Coding");
+}
+
+    event.preventDefault();
+  });
+});
+});
