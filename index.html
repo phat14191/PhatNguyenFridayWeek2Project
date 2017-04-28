@@ -10,52 +10,31 @@
   <body>
     <div class="container">
         <!-- information  -->
-      <div id="information">
       <h1>Welcome to Epicodus</h1>
-        <ul>
-          <div class="ccc">
+
+          <div class="information-form">
             <h1>C#/.Net</h1>
-              <img src="img/C.png" alt="C#">
-              <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market...</p>
+              <img id="cnetm" src="img/C.png" alt="C#">
+              <p id="cnet"> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market... </p>
           </div>
-          <div class="jjj">
+          <div class="information-form">
             <h1>Java/Android</h1>
-              <img src="img/Java.png" alt="C#">
-              <p class="java">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces...</p>
+              <img id="javam"src="img/Java.png" alt="C#">
+              <p id="java">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces...</p>
             <h1>PHP/Drupal</h1>
           </div>
-
-          <div class="ppp">
-              <img src="img/php.jpg" alt="C#">
-              <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools...</p>
+          <div class="information-form">
+              <img id="phpm" src="img/php.jpg" alt="C#">
+              <p id="php"> PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools...</p>
           </div>
-      </div>
 
-
-
-
-
-
-
-
-      <!-- <form id="survey-form" class="" action="index.html" method="post">
-        <div class="jumbotron">
-          <h2>Welcome to our survey</h2>
-        </div>
+          <div class="jumbotron">
+            <h2><center>Welcome to our survey<center></h2>
+          </div>
+        <form id="survey-form">
           <div class="form-group">
             <label for="name">Enter your name:</label>
             <input id="name" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="">Select your track you want to study:</label>
-            <select id="age">
-              <option></option>
-              <option>C#/.Net</option>
-              <option>Java/Android</option>
-              <option>PHP/Drupal</option> -->
-<!--
-            </select>
           </div>
 
           <div class="form-group">
@@ -76,9 +55,9 @@
 
           <div class="form-group">
             <label for="">Have many hours do you spent for coding before: </label>
-            <select id="hou">
+            <select id="hour">
               <option>Never</option> -->
-              <!-- <option>10hours - 50hours</option>
+              <option>10hours - 50hours</option>
               <option>50hours - 100hours</option>
               <option>100hours - 150hours</option>
               <option>200hours - more</option>
@@ -86,8 +65,8 @@
           </div>
 
           <div class="form-group">
-            <label for="">When you finish, Will you study the other track: </label>
-            <select id="age">
+            <label for="">What track would you like to study: </label>
+            <select id="expect">
               <option></option>
               <option>C#/.Net</option>
               <option>Java/Amdroid</option>
@@ -101,15 +80,14 @@
             <input id="color" type="color" name="color">
           </div>
 
- -->
-
-
-
-
-
-
-
-
+          <button class="button">Summit!</button>
+        </form>
+          <div id="story">
+            <h1>Your confirm</h1>
+            <p>
+              Hello <span class="name"></span> and your track is <span class="expect"></span>, you love <span class="color"></span> color.
+            </p>
+          </div>
     </div>
   </body>
 </html>
