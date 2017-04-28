@@ -10,12 +10,12 @@
   <body>
     <div class="container">
         <!-- information  -->
-     <h1>Welcome to Epicodus</h1>
-       <form id:"info">
-         <div class="information-detail1">
+     <h1><center>Welcome to Epicodus</center></h1>
+       <form id:"info"><center>
+        <div class="information-detail1">
           <h1>C#/.Net</h1>
            <img id="cnetm" src="img/C.png" alt="abc">
-              <h2 id="cnet"> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market... </h2>
+           <h2 id="cnet"> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market... </h2>
         </div>
         <div class="information-detail1">
           <h1>Java/Android</h1>
@@ -27,8 +27,9 @@
            <img id="phpm" src="img/php.jpg" alt="C#">
            <h2 id="php"> PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools...</h2>
         </div>
-        </div>
-      </form>
+      </form></center>
+      <!-- end of infomation -->
+      <!-- Survey form starting-->
         <div class="jumbotron">
           <h2><center>Welcome to our survey<center></h2>
         </div>
@@ -37,18 +38,15 @@
             <label for="name">Enter your name:</label>
             <input id="name" type="text">
           </div>
-
           <div class="form-group">
             <label for="">What's your gender</label>
             <div class="radio">
-              <select id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-        </select>
-              </label>
+             <select id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+             </select>
             </div>
           </div>
-
           <div class="form-group">
             <label for="">What track would you like to study: </label>
             <select id="expect">
@@ -56,15 +54,12 @@
               <option>C#/.Net</option>
               <option>Java/Amdroid</option>
               <option>PHP/Drupal</option>
-
             </select>
           </div>
-
           <div class="form-group">
             <label for="color">Favorite Color</label>
             <input id="color" type="color" name="color">
           </div>
-
           <button class="button">Summit!</button>
         </form>
           <div id="story">

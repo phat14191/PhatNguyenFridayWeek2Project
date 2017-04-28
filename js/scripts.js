@@ -1,3 +1,4 @@
+//fontend logic slideTogggle//
 $(document).ready(function(event) {
   $("#cnetm").click(function() {
     $("#cnet").slideToggle() ;
@@ -13,8 +14,6 @@ $("#phpm").click(function() {
   $("#php").slideToggle() ;
   $("h2#php").siblings("h2").hide();
 });
-
-
 
 //fontend logic//
 $(document).ready(function() {
@@ -35,10 +34,10 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+  });
 });
-});
-// last part
 
+// last part alert welcone//
 $(function() {
   $(document).ready(function() {
   $("#survey-form").submit(function(event) {
@@ -47,21 +46,21 @@ $(function() {
 
     if ((gender === 'male') && (track2 === 'C#/.Net')) {
     alert ("Welcome to C#/.Net");
-  }
+    }
     else if (
     ((gender === 'female') && (track2 === 'PHP/Drupal')) ||
     ((gender === 'female') && (track2 === 'Java/Amdroid'))
-  ) {
+    ){
     alert ("Welcome to PHP/Drupal");
-  }
+    }
     else if (
     ((gender != 'female') && (track2 === 'PHP/Drupal')) ||
     ((gender != 'female') && (track2 === 'Java/Amdroid'))
-  ){
+    ){
     alert ("Welcome to Coding");
-}
+    }
 
     event.preventDefault();
+    });
+    });
   });
-});
-});
